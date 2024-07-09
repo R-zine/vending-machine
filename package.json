@@ -3,6 +3,7 @@
     "concurrently": "^8.2.2"
   },
   "scripts": {
-    "dev": "concurrently \"cd backend && node app.js\" \"cd ./frontend && npm run dev\""
+    "dev": "concurrently \"cd backend && node app.js\" \"cd ./frontend && npm run dev\"",
+    "install": "cd frontend && npm i && cd ../backend && npm i"
   }
 }

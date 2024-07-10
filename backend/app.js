@@ -13,7 +13,7 @@ const mockedData = () =>
     id: faker.string.uuid(),
     name: faker.commerce.product(),
     image: faker.image.urlLoremFlickr({ width: 280, height: 180 }),
-    price: faker.number.float({ min: 0.5, max: 5, fractionDigits: 2 }),
+    price: faker.number.float({ min: 0.5, max: 5, fractionDigits: 1 }),
     currency,
     quantity: faker.number.int({ min: 0, max: 15 }),
   }));

@@ -77,7 +77,7 @@ export const Grid = () => {
               </Typography>
               <Button variant="outlined" onClick={() => buyProduct(product.id)}>
                 {product.currency.symbol}
-                {product.price}
+                {product.price.toFixed(2)}
               </Button>
             </CardContent>
           </CardActionArea>
